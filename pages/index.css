@@ -49,6 +49,8 @@ background-position: center;
 .content {
     flex: 1;
     color: #fff;
+    box-sizing: border-box;
+    max-width: 1184px;
 }
 .lead {
     padding-top: 56px;
@@ -56,6 +58,7 @@ background-position: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 .lead__title {
 font-weight: black;
@@ -77,12 +80,14 @@ line-height: 36px;
 
 .lead__images {
 position: relative;
+max-width: 984px;
 }
 
 .lead__image {
-width: 984px;
-height: 615px;
+width: 100%;
+height: 100%;
 margin: 0 auto;
+object-fit: cover;
 }
 
 .lead__caption {
@@ -109,7 +114,7 @@ font-weight: normal;
 font-size: 16px;
 line-height: 163%;
 min-height: 208px;
-width: 690px;
+max-width: 690px;
 margin: 0 0 33px;
 }
 
@@ -128,99 +133,135 @@ line-height: 18px;
 }
 
 .photo-grid {
-    max-width: 1184px;
+    width: 100%;
     min-height: 671px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(284px, max-content));
     padding-top: 92px;
+    gap: 16px;
 }
 .photo-grid__item {
-max-width: 284px;
-max-height: 213px;
-
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 .places {
-padding: 92px 0;
-display: flex;
-flex-direction: column;
-row-gap: 80px;
+    padding: 92px 100px;
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content);
+    row-gap: 80px;
 }
 .place {
-    width: 984px;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0 100px;
-    row-gap: 48px;
-}
-
-.place__row-about {
-    display: flex;
-    flex-direction: row;
+    display: grid; 
+    grid-template-columns: repeat(2, fit-content(484px));
     column-gap: 40px;
-    align-items: baseline;
-}
 
-.place__row-description{
-    display: flex;
-    flex-direction: row;
-    column-gap: 40px;
 }
-
 .place__image {
-width: 460px;
-height: 460px;
-}
-.place__text {
-    display:flex;
-    flex-direction: column;
-    row-gap: 26px;
-}
+    max-width: 460px;
+    max-height: 460px;
+    }
 
-.place__paragraph {
-    width: 484px;
-    margin: 0;
-    font-weight: normal;
-font-size: 18px;
-line-height: 163%;
-}
+    .place__paragraph {
+        max-width: 484px;
+        margin: 0;
+        font-weight: normal;
+    font-size: 18px;
+    line-height: 163%;
+    }
+    
+    .place__title {
+    font-weight: bolder;
+    font-size: 72px;
+    line-height: 76px;
+    width: 460px;
+    place-self: bottom;
+    margin: 0 0 48px;
+    }
 
-.place__title {
-font-weight: bolder;
-font-size: 72px;
-line-height: 76px;
-width: 460px;
-place-self: bottom;
-margin: 0;
-}
+    .place__text {
+        display:flex;
+        flex-direction: column;
+        row-gap: 26px;
+    }
 
-.website {
-    width: 456px;
-    align-self: flex-end;
-}
-.website__url-heading {
-    color: #AAAAAA;
-    font-weight: normal;
-font-size: 12px;
-line-height: 12px;
-}
-.website__url-link {
-    font-weight: normal;
-font-size: 18px;
-line-height: 22px;
-text-decoration-line: underline;
-color: #FFFFFF;
-}
-.cover {
-background-image: url(../images/cover-trains.jpg);
-background-position: center;
-background-size: contain;
-background-repeat: no-repeat ;
-width: 1184px;
-height: 740px;
-z-index: 1;
+    .website {
+        width: 456px;
+        align-self: flex-end;
+        margin: 0 0 48px;
+    }
+    .website__url-heading {
+        color: #AAAAAA;
+        font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    }
+    .website__url-link {
+        font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    }
+    .website__url-link:hover {
+        opacity: 0.8;
+    }
+    
+    .cover {
+        font-family: 'Inter', 'Arial', sans-serif;
+    }
+
+    .cover__link {
+        text-decoration: none;
+        color:#fff;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 740px;
+        background-image: url(../images/cover-trains.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        object-fit: cover;
+    }
+
+    .cover__title {
+        font-weight: bolder;
+        font-size: 72px;
+        line-height: 76px;
+        max-width: 560px;
+        align-self: center;
+        z-index: 1;
+        }
+        .cover__subtitle {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 360px;
+        align-self: center;
+        z-index: 1;
+    }
+    .cover__link::before {
+    content: '';
+    background: rgba(42, 44, 47);
+    opacity: .3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    }
+
+    .cover__link:hover::before {
+        opacity: .8;
+    }
+
+/* .cover {
+    background-image: url(../images/cover-trains.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 position: relative;
 text-align: center;
 display: flex;
@@ -228,11 +269,18 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
+.cover__image {
+background-image: url(../images/cover-trains.jpg);
+background-repeat: no-repeat;
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
 .cover__overlay {
 background-color: #2A2C2F;
 opacity: .3;
-width: 1184px;
-height: 740px;
+width: 100%;
+height: 100%;
 z-index: -1;
 position: absolute;
 }
@@ -246,8 +294,7 @@ max-width: 560px;
 font-weight: normal;
 font-size: 18px;
 line-height: 22px;
-max-width: 360px;
-}
+max-width: 360px;} */
 
 .footer {
     color:#fff;
@@ -272,3 +319,15 @@ line-height: 18px;
 font-size: 14px;
 line-height: 16px;
 }
+
+/* 
+как позиционированы картинки в гриде в тренажере
+.gallery__image {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+ */
