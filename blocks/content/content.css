@@ -1,0 +1,6 @@
+.content {
+    flex: 1;
+    color: #fff;
+    box-sizing: border-box;
+    max-width: 1184px;
+}

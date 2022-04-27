@@ -3,14 +3,16 @@
     src: url(../fonts/Interblack.ttf) format('truetype'),
          url(../fonts/Interblack.woff) format('woff'),
          url(../fonts/Interblack.woff2) format('woff2');
-    font-weight: bolder;
+    font-style: bolder;
+    font-weight: 900;
   }
   @font-face {
     font-family: 'Inter';
     src: url(../fonts/Interbold.ttf) format('truetype'),
          url(../fonts/Interbold.woff) format('woff'),
          url(../fonts/Interblack.woff2) format('woff2');
-    font-weight: bold;
+    font-style: bold;
+    font-weight: 700;
   }
   
 @font-face {
@@ -18,5 +20,6 @@
     src: url(../fonts/Interregular.ttf) format('truetype'),
          url(../fonts/Interregular.woff) format('woff'),
          url(../fonts/Interregular.woff2) format('woff2');
-    font-weight: normal;
+    font-style: normal;
+    font-weight: 400;
   }

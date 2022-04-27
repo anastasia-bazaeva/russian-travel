@@ -1,0 +1,12 @@
+.places {
+    padding: 92px 100px;
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content);
+    row-gap: 80px;
+}
+
+@media screen and (max-width: 1180px) {
+    .places {
+        padding: 92px 48px;
+    }
+}
