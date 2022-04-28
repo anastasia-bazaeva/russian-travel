@@ -2,3 +2,14 @@
     align-self: flex-end;
     margin: 0;
 }
+
+@media screen and (max-width: 650px) {
+    .website {
+       align-self: flex-start;
+    }
+}
+@media screen and (max-width: 400px) {
+    .website {
+        padding: 0 16px;
+    }
+}

@@ -1,0 +1,11 @@
+@media screen and (max-width: 1010px) {
+    .place__break {
+        width: min-content;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .place__break {
+        width: fit-content;
+    }
+}

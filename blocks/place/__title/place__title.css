@@ -14,4 +14,14 @@
             line-height: 46px;
         }
     }
-    
+    @media screen and (max-width: 650px) {
+        .place__title {
+            font-size: 32px;
+            line-height: 35px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .place__title {
+            padding: 0 16px;
+        }
+    }

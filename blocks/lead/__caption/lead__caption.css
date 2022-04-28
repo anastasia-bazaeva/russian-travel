@@ -14,3 +14,9 @@
             padding-left: 24px;
         }
     }
+
+    @media screen and (max-width: 430px) {
+        .header__lang-link {
+            padding-left: 16px;
+        }
+    }

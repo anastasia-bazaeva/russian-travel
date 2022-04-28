@@ -20,3 +20,18 @@
         row-gap: 73px;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .places {
+        padding: 64px 16px 66px;
+        max-width: 100%;
+        row-gap: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .places {
+        padding: 64px 0px 66px;
+        max-width: 100%;
+    }
+}

@@ -37,14 +37,7 @@
 @import url(../blocks/footer/__link/footer__link.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 @import url(../blocks/cover/__laptop/cover__laptop_wide.css);
-@import url(../blocks/place/__title-break/place__title-break.css);
+@import url(../blocks/place/__break/place__break.css);
+@import url(../blocks/footer/__links/footer__links.css);
 
 
-html, body {
-margin: 0;
-background-color:antiquewhite;
-}
-
-/* header, section, footer {
-    border: 1px solid violet;
-} */

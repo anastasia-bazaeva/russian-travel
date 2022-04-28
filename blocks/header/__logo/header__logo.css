@@ -4,4 +4,12 @@
     width: 176px;
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    @media screen and (max-width: 430px) {
+        .header__logo {
+            height: 42px;
+            width: 142px;
+        }
     }
