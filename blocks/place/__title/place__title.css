@@ -7,3 +7,11 @@
     place-self: bottom;
     margin: 0;
     }
+
+    @media screen and (max-width: 1010px) {
+        .place__title {
+            font-size: 42px;
+            line-height: 46px;
+        }
+    }
+    

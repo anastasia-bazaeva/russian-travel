@@ -4,6 +4,7 @@
     font-size: 18px;
     line-height: 22px;
     text-decoration-line: underline;
+    text-underline-position: under;
     color: #FFFFFF;
     }
 .website__url-link:hover {

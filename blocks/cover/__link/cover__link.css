@@ -27,3 +27,16 @@
         opacity: .8;
         cursor: pointer;
     }
+
+    @media screen and (max-width: 1024px) {
+        .cover__link {
+            min-height: 640px;
+        } 
+    }
+
+    @media screen and (max-width: 1010px) {
+        .cover__link {
+            min-height: 480px;
+        }
+    }
+    

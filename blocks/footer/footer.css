@@ -1,13 +1,17 @@
 .footer {
+    width: calc(100% - 48px*2);
     color:#fff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 92px;
     font-family: 'Inter', 'Arial', sans-serif;
+    align-items: baseline;
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1010px) {
     .footer {
-        padding: 92px 48px 0;
+        padding-top: 88px;
+        width: calc(100% - 24px*2);
     }
 }
