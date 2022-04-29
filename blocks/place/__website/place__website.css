@@ -1,15 +1,15 @@
-.website {
+.place__website {
     align-self: flex-end;
     margin: 0;
 }
 
 @media screen and (max-width: 650px) {
-    .website {
+    .place__website {
        align-self: flex-start;
     }
 }
 @media screen and (max-width: 400px) {
-    .website {
+    .place__website {
         padding: 0 16px;
     }
 }

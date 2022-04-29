@@ -4,7 +4,6 @@
     font-size: 96px;
     line-height: 100px;
     width: 720px;
-    min-height: 200px;
     text-align: center;
     margin: 56px 0 0 0;
     padding: 0;
@@ -33,5 +32,6 @@
             line-height: 44px;
             width: min-content;
             min-height: fit-content;
+            margin: 48px 0 0 0;
         }
     }

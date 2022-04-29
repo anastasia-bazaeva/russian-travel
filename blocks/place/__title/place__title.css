@@ -6,6 +6,7 @@
     max-width: 100%;
     place-self: bottom;
     margin: 0;
+    align-self: flex-start;
     }
 
     @media screen and (max-width: 1010px) {

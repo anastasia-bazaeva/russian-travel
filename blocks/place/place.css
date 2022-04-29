@@ -4,6 +4,7 @@
     grid-template-columns: 460px 1fr;
     column-gap: 40px;
     row-gap: 48px;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1180px) {
@@ -26,7 +27,7 @@
     .place {
        display: flex;
        flex-direction: column;
-       align-items: flex-start;
+       align-items: center;
        max-width: 618px;
        row-gap: 32px;
     }
