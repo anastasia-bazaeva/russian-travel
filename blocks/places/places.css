@@ -3,7 +3,7 @@
     padding: 92px 148px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center; /*спасибо большое за скриншот! <3 я запуталась в первый раз и не то выровняла*/
     row-gap: 80px;
 }
 
